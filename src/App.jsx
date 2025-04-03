@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Home from "./page/Home";
 // import Service from "./page/service";
@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import TermsConditions from "./page/terms-conditions";
 import PrivacyPolicy from "./page/privacy-policy";
 import Footer from "./components/Home/Footer";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Loader } from "lucide-react";
 import ContactPage from "./page/Contact";
 import { Toaster } from "react-hot-toast";
@@ -21,6 +21,7 @@ function App() {
     <main className="antialiased tracking-[.001em]">
       <Toaster />
       <HashRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -170,3 +171,13 @@ function App() {
 }
 
 export default App;
+
+export const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};

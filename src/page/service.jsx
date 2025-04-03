@@ -6,8 +6,7 @@ import { useLocation } from "react-router-dom";
 export const titles = {
   "/services": {
     title: "Forex & CFD Broker Dealer License",
-    imageUrl:
-      "https://images.pexels.com/photos/7567396/pexels-photo-7567396.jpeg",
+    imageUrl: "ForexBroker.webp",
     description:
       "Launching a successful Forex and CFD brokerage requires more than just capital and a trading platform. It demands comprehensive licensing and compliance with local and international regulations. Beyond Finserv specializes in helping brokers navigate the complex landscape of regulatory frameworks to secure the necessary licenses and approvals.",
     subheading: "Our Comprehensive Services Include",
@@ -22,8 +21,7 @@ export const titles = {
   },
   "/forex-broker-dealer-license": {
     title: "Forex & CFD Broker Dealer License",
-    imageUrl:
-      "https://images.pexels.com/photos/7567396/pexels-photo-7567396.jpeg",
+    imageUrl: "FundManager.webp",
     description:
       "Launching a successful Forex and CFD brokerage requires more than just capital and a trading platform. It demands comprehensive licensing and compliance with local and international regulations. Beyond Finserv specializes in helping brokers navigate the complex landscape of regulatory frameworks to secure the necessary licenses and approvals.",
     subheading: "Our Comprehensive Services Include",
@@ -38,8 +36,7 @@ export const titles = {
   },
   "/fund-manager-licenses": {
     title: "Fund Manager License Acquisition",
-    imageUrl:
-      "https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "FundManager.webp",
     description:
       "Navigating the complexities of acquiring a Fund Manager License can be challenging, especially with evolving regulatory requirements. Beyond Finserv offers end-to-end support to ensure your fund management operations are fully licensed and compliant with international standards.",
     subheading: "What We Offer",
@@ -54,8 +51,7 @@ export const titles = {
   },
   "/electronic-money-institutions-license": {
     title: "EMI (Electronic Money Institution) License",
-    imageUrl:
-      "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "EMIBanks.webp",
     description:
       "The surge in digital payments has made EMI licenses essential for companies providing electronic money and payment services. Beyond Finserv simplifies the process of obtaining this critical license, enabling you to offer seamless financial services such as e-wallets, prepaid cards, and payment processing solutions.",
     subheading: "Our EMI Licensing Services Include",
@@ -70,8 +66,7 @@ export const titles = {
   },
   "/payment-service-provider-license": {
     title: "PSP (Payment Service Provider) License Solutions",
-    imageUrl:
-      "https://images.pexels.com/photos/6863515/pexels-photo-6863515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "psp.webp",
     description:
       "Payment service providers play a critical role in the digital economy by facilitating secure and efficient payment processing. Beyond Finserv offers comprehensive services to help your business obtain a PSP license, ensuring that you can process payments seamlessly and in compliance with global regulatory standards.",
     subheading: "Our PSP Licensing Services Include",
@@ -86,8 +81,7 @@ export const titles = {
   },
   "/cryptocurrencies-license": {
     title: "Cryptocurrency Licenses",
-    imageUrl:
-      "https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg",
+    imageUrl: "Cryptocurrency.webp",
 
     description:
       "With the growing adoption of cryptocurrencies, regulatory compliance is more critical than ever. Beyond Finserv helps businesses acquire cryptocurrency licenses, set up secure trading platforms, and integrate compliance solutions to operate confidently in the evolving crypto landscape.",
@@ -102,8 +96,7 @@ export const titles = {
   },
   "/banking-psp": {
     title: "Banking & PSP Services",
-    imageUrl:
-      "https://images.pexels.com/photos/929288/pexels-photo-929288.jpeg",
+    imageUrl: "Banking.webp",
     description:
       "Accessing reliable banking and payment services is crucial for any financial enterprise. Beyond Finserv offers partnered solutions with renowned banks and PSPs to streamline your financial operations.",
     subheading: "Our Services Include",
@@ -117,8 +110,7 @@ export const titles = {
   },
   "/fintech-setup-integration": {
     title: "Fintech Setup & Technology Integration",
-    imageUrl:
-      "https://images.pexels.com/photos/5831658/pexels-photo-5831658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "Fintech.webp",
     description:
       "Beyond Finserv specializes in setting up and integrating cutting-edge financial technologies to enhance operational efficiency and customer experience.",
     subheading: "Our Fintech Solutions Include",
@@ -133,8 +125,7 @@ export const titles = {
   },
   "/prime-of-prime-liquidity": {
     title: "Prime of Prime Liquidity",
-    imageUrl:
-      "https://images.pexels.com/photos/7567396/pexels-photo-7567396.jpeg",
+    imageUrl: "Liquidity.webp",
     description:
       "Accessing deep liquidity is essential for financial institutions, brokerages, and trading firms to ensure smooth trade execution, better spreads, and robust risk management. At Beyond Finserv, we provide end-to-end liquidity consulting services designed to optimize your trading operations and give you access to institutional-grade liquidity pools.",
     subheading: "Our Comprehensive Liquidity Services Include",
@@ -151,8 +142,7 @@ export const titles = {
   },
   "/compliance-framework": {
     title: "Compliance Framework",
-    imageUrl:
-      "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
+    imageUrl: "compliance.webp",
     description:
       "Navigating complex regulatory requirements is essential for sustainable growth. Beyond Finserv provides tailored compliance frameworks and reporting solutions to keep your business compliant and secure.",
     subheading: "Our Services Include",
@@ -169,8 +159,7 @@ export const titles = {
   },
   "/gaming-license-solutions": {
     title: "Gaming License Solutions",
-    imageUrl:
-      "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
+    imageUrl: "Gaming.webp",
     description: `Navigate the Gaming Industry with Confidence Entering the online gaming and gambling industry requires the right licensing to ensure legal compliance and player trust. At Beyond FinServ, we simplify the complex licensing process, guiding you from application to regulatory compliance in leading global jurisdictions.`,
     subheading: "Why a Gaming License is Essential",
     subheadingPoints: [

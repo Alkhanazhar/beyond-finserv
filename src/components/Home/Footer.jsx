@@ -66,6 +66,7 @@ export const FooterEnd = () => {
 };
 
 const QuickLinks = () => {
+  
   return (
     <div className="flex items-center justify-center w-full flex-col">
       <h3 className="text-base font-semibold text-secondary-600 mb-4 whitespace-nowrap">
@@ -114,16 +115,21 @@ const FooterLogo = () => {
           </h6>
           <div className="flex space-x-4 mt-4">
             <a
-              href="https://www.instagram.com/beyondfinserv"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() =>
+                window.open("https://www.instagram.com/beyondfinserv", "_blank")
+              }
+              className="cursor-pointer"
             >
               <Instagram className="w-6 h-6 text-primary-950 hover:text-pink-500" />
             </a>
             <a
-              href="https://www.linkedin.com/company/beyondfinserv/"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/company/beyondfinserv/",
+                  "_blank"
+                )
+              }
+              className="cursor-pointer"
             >
               <Linkedin className="w-6 h-6 text-primary-950 hover:text-blue-600" />
             </a>

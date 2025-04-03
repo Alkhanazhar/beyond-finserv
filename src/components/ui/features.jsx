@@ -3,6 +3,7 @@ import { Button } from "./button";
 import { Phone } from "lucide-react";
 
 const Features = ({ item }) => {
+  console.log(item);
   return (
     <div className="overflow-hidden bg-white ">
       <div className="container mx-auto py-12">
@@ -31,13 +32,13 @@ const Features = ({ item }) => {
               </div>
               <Button className="mt-4 hidden md:flex w-fit" asChild size="lg">
                 <Link to={"/contacts"}>
-                  <Phone className="mr-2" />
+                  <Phone className="mr-2 scale-125" />
                   {item?.ctaBtn}
                 </Link>
               </Button>
               <Button className="mt-8 md:hidden flex w-fit" asChild>
                 <Link to={"/contacts"}>
-                  <Phone />
+                  <Phone className="scale-105" />
                   contact us
                 </Link>
               </Button>
@@ -45,8 +46,8 @@ const Features = ({ item }) => {
           </div>
           <img
             alt="Product screenshot"
-            src="https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg"
-            className="h-96 w-[40rem] my-auto max-w-none rounded-xl ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            src={"services/" + item.imageUrl}
+            className="h-96 w-[40rem] object-cover bg-left object-left my-auto max-w-none rounded-xl ring-1  ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
           />
         </div>
       </div>

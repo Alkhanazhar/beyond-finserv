@@ -191,10 +191,10 @@ const About = () => {
                     <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-white">
                       {item.icon}
                     </div>
-                    <h3 className="text-xl font-semibold mb-2  text-secondary-400">
+                    <h3 className="text-2xl font-semibold mb-2  text-secondary-300">
                       {item.title}
                     </h3>
-                    <p className=" font-[400] text-secondary-400">
+                    <p className=" font-[400] text-secondary-300">
                       {item.description}
                     </p>
                   </motion.div>

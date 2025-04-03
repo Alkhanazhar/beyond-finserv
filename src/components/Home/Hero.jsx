@@ -107,12 +107,12 @@ const Hero = () => {
         </div>
 
         {/* Image */}
-        <div className="justify-center items-center z-[90] flex-1">
+        <div className="justify-center items-center z-[90] flex-1 flex">
           <img
             id="hero"
             src="hero.gif"
             alt=""
-            className="sm:w-[50%] md:w-[90%] lg:w-[80%] xl:w-[80%] w-[77%]"
+            className="sm:w-[50%] md:w-[90%]  lg:w-[80%] xl:w-[80%] w-[77%]"
           />
           {/* <img src="mobile.svg" /> */}
         </div>

@@ -21,60 +21,7 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8 ">
-              <div className="border shadow-md p-3 rounded-md bg-gray-50/40">
-                <h2 className="text-xl mb-6 croogla flex items-center gap-2 text-gray-700">
-                  {/* <MapPin className=" text-gray-600 " size={18} /> */}
-                  Location:
-                </h2>
-                <div className="flex items-start space-x-4">
-                  <div className="text-gray-500 ">
-                    <div className=" gap-4 ">
-                      <div className="flex gap-4">
-                        <h2 className="text-sm md:text-base font-semibold text-gray-700">
-                          Address:1
-                        </h2>
-                        <p>
-                          Building A1, Dubai Digital Park, Dubai Silicon
-                          Oasis,Dubai, United Arab Emirates.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex gap-4">
-                      <h2 className="text-sm md:text-base font-semibold text-gray-700">
-                        Address:2
-                      </h2>
-                      <p>128 City Road, London, United Kingdom</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-row md:flex-row border shadow-md p-3 rounded-md bg-gray-50/50 flex items-center gap-4">
-                <h2 className="text-xl croogla flex items-center gap-2 text-gray-700">
-                  Phone:
-                </h2>
-                <div className="flex items-start space-x-2">
-                  <Phone className="w-4 h-4 text-gray-600 mt-1" />
-                  <div className="text-gray-500">
-                    <p>+971 55 786 3539</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-row md:flex-row border shadow-md p-3 rounded-md bg-gray-50/50 flex gap-4 items-center">
-                <h2 className="text-xl croogla flex items-center gap-2 text-gray-700">
-                  Email at:
-                </h2>
-                <div className="flex items-start space-x-2 ">
-                  <Mail className="w-4 h-4 text-gray-600 mt-1" />
-                  <div className="text-gray-500">
-                    <p className="whitespace-normal text-sm md:text-base">
-                      hello@beyondfinserv.com
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <img src="contact-us.webp" alt="" />
             </div>
 
             {/* Contact Form */}

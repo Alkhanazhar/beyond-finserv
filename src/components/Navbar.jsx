@@ -212,7 +212,7 @@ const NavItemsComponent = ({ navItems = {} }) => {
                       initial={{ opacity: 0, scale: 0.7 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.7 }}
-                      className="border border-b-gray-600/30 z-[100] absolute top-8 bg-white rounded-md shadow-lg w-56 -right-16"
+                      className="border border-b-gray-600/30 z-[100] absolute top-8 bg-white rounded-md shadow-lg w-56 -right-6 overflow-hidden"
                     >
                       {services.map((service, index) => (
                         <Link

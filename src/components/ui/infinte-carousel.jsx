@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export const InfiniteMovingCards = ({
   items,
@@ -12,6 +13,7 @@ export const InfiniteMovingCards = ({
 }) => {
   const containerRef = useRef(null);
   const scrollerRef = useRef(null);
+  const route = useLocation();
 
   useEffect(() => {
     addAnimation();
@@ -76,11 +78,15 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => {
-          const index = second ? ++idx : ++idx + 10;
+          const index = second ? ++idx : ++idx + 9;
+          const src = route.pathname.includes("banking-psp")
+            ? "./services/bank" + ` ${index}.png`
+            : "./services/image" +
+              (index != 15 ? ` ${index}.png` : ` ${index}.svg`);
 
           return (
             <li
-              className=" max-w-full relative rounded-2xl  flex-shrink-0  px-4 py-4"
+              className=" max-w-full relative rounded-2xl flex items-center  flex-shrink-0  px-4 py-4"
               style={{
                 background: "",
               }}
@@ -92,8 +98,8 @@ export const InfiniteMovingCards = ({
                   className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                 ></div>
                 <img
-                  src={"./services/image " + index + ".svg"}
-                  className="bg-contain mix-blend-multiply object-contain origin-top-left md:w-36 md:h-36 sm:w-32 sm:h-32 w-20 h-20 "
+                  src={src}
+                  className={`bg-contain mix-blend-multiply object-contain origin-top-left md:w-36 md:h-auto sm:w-32 sm:h-32 w-20 h-20 `}
                 />
                 {/* <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
