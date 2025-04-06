@@ -11,15 +11,14 @@ const BrokerLicense = () => {
     <>
       <div className="flex gap-2 text-center flex-col mt-8 justify-center my-4 md:my-8">
         {routes.includes(location.pathname) && (
-          <>
-            <InfiniteMovingCards speed="1.4" items={arrayOfTen} />
+          <div className="mt-8">
+            <InfiniteMovingCards speed="1.4" first={true} />
             <InfiniteMovingCards
               speed="1.4"
-              items={arrayOfTen2}
               direction="reverse"
               second={true}
             />
-          </>
+          </div>
         )}
       </div>
     </>

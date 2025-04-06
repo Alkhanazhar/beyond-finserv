@@ -8,10 +8,16 @@ const ContentTerms = ({ item, index }) => {
           {index + 1 + " . "}
           {item?.heading}
         </h5>
-        {isString(item?.content) && (
+        {isString(item?.content) ? (
           <div className="m-4 md:mx-8 text-gray-800/80 text-sm font-[400]">
             {item?.content}
           </div>
+        ) : (
+          item?.content.map((item) => (
+            <div className="m-2 md:mx-8 text-gray-800/80 text-sm font-[400]">
+              <li>{item}</li>
+            </div>
+          ))
         )}
       </div>
     </div>

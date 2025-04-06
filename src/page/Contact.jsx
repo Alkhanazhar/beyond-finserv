@@ -35,7 +35,7 @@ const ContactPage = () => {
         </div>
 
         {/* Map */}
-        <div className="w-full flex flex-col md:flex-row md:gap-8 gap-4">
+        {/* <div className="w-full flex flex-col md:flex-row md:gap-8 gap-4">
           <div className="flex flex-col flex-1 h-96">
             <h1 className="py-4">
               Address:1{" "}
@@ -72,7 +72,7 @@ const ContactPage = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </Wrapper>
     </div>
   );
