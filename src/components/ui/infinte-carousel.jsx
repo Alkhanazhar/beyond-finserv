@@ -7,13 +7,11 @@ export const InfiniteMovingCards = ({
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
-  second = false,
   className,
-  first = false,
+  items,
 }) => {
   const containerRef = useRef(null);
   const scrollerRef = useRef(null);
-  const route = useLocation();
 
   useEffect(() => {
     addAnimation();
@@ -61,62 +59,6 @@ export const InfiniteMovingCards = ({
       }
     }
   };
-  const fintech = [
-    "image 1.png",
-    "image 2.png",
-    "image 3.png",
-    "image 4.png",
-    "image 5.png",
-    "image 6.png",
-    "image 7.png",
-    "image 8.png",
-    "image 9.png",
-    "image 10.png",
-    "image 11.png",
-    "image 12.png",
-    "image 13.png",
-    "image 14.png",
-    // "image 15.svg",
-    "image 16.png",
-    "image 17.png",
-    "image 18.png",
-  ];
-  const banking = [
-    "bank 1.png",
-    "bank 2.png",
-    "bank 3.png",
-    "bank 4.png",
-    "bank 5.png",
-    "bank 6.png",
-    "bank 7.png",
-    "bank 8.png",
-    "bank 9.png",
-    "bank 10.png",
-    "bank 11.png",
-    "bank 12.png",
-    "bank 13.png",
-    "bank 14.png",
-    "bank 15.png",
-    "bank 16.png",
-    "bank 17.png",
-    "bank 18.png",
-  ];
-  let items;
-  if (location.href.includes("/banking-psp")) {
-    console.log("Banking");
-    console.log(first);
-    const mid = Math.ceil(banking.length / 2);
-
-    items = first ? banking.slice(0, mid) : banking.slice(mid);
-  } else if (location.href.includes("/fintech-setup-integration")) {
-    console.log("fintech");
-    console.log(first);
-
-    const mid = Math.ceil(fintech.length / 2);
-
-    items = first ? fintech.slice(0, mid) : fintech.slice(mid);
-  }
-  console.log(items);
 
   return (
     <div
@@ -134,7 +76,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => {
+        {items.map((item) => {
           return (
             <li
               className=" max-w-full relative rounded-2xl flex items-center  flex-shrink-0  px-4 py-4"

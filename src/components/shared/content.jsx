@@ -1,5 +1,4 @@
 import { isString } from "@/lib/utils";
-
 const ContentText = ({ item, index }) => {
   return (
     <div className="m-2 ">

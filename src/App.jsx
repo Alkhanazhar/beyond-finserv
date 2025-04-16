@@ -163,7 +163,6 @@ function App() {
           <Route path="/term-conditions" element={<TermsConditions />} />
         </Routes>
         <ChatFloatingBtn />
-
         <Footer />
       </HashRouter>
     </main>
